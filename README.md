@@ -1,6 +1,6 @@
 # Data Scientist
 
-#### Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
+### Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
 #### ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
 #### Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
 #### Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
@@ -42,3 +42,10 @@ Developed a bespoke AI solution enabling individual traders to assess market ris
 
 ### Forecasting NYC Yellow Taxi Prices and Demand
 Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
+
+### Forecasting Travel Time for Uber Riders
+Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
+
+### Data-Driven Strategies for Optimizing Term Deposit Sales
+Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
+
