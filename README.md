@@ -39,16 +39,18 @@
 
 ## Projects
 ### Automatic Bayesian Network Construction from Natural Language Prompts
+[Details](https://github.com/dsgala/Automated-Bayesian-Networks)
 Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
 
 ### Forecasting NYC Yellow Taxi Prices and Demand
+[Details](https://github.com/dsgala/Forecasting-NYC-Yellow-Taxi-Prices-and-Demand)
 Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
 
 ### Forecasting Travel Time for Uber Riders
+[Details](https://github.com/dsgala/Uber-Movements)
 Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
 
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
-[Code](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
-
+[Details](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
