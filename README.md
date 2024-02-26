@@ -1,8 +1,10 @@
 # Data Scientist
 
 ## Education						       		
-- M.S., Applied Data Science	| The University of Chicago (_December 2023_)	 			        		
-- B.S., Applied Statistics & Analytics | Narsee Monjee Institute of Management Studies (_May 2021_)
+- M.S., Applied Data Science
+  The University of Chicago (_December 2023_)	 			        		
+- B.S., Applied Statistics & Analytics
+  Narsee Monjee Institute of Management Studies (_May 2021_)
 
 ## Skills
 - Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
