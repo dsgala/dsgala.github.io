@@ -26,11 +26,11 @@
 - Responsible for designing and implementing automated data ingestion & curation pipelines to enable visual analytics delivery for a leading pharmaceutical company, manufacturer of the COVID vaccine.
 - Conducted data profiling to integrate a new source, and validated data across all ETL layers in the pipeline to guarantee consistent flow, ensuring the accuracy and reliability of the data.
 
-***Quality Assurance and Process Improvement***
+*Quality Assurance and Process Improvement*
 - Led quality assurance with thorough unit/integration tests, and resolved edge bug cases for pipeline/dashboard, resulting in improved functionality.
 - Developed comprehensive solution documentation that improved inter-team and cross-team collaboration, leading to more efficient and effective project execution.
 
-***Client Engagement and Leadership***
+*Client Engagement and Leadership*
 - Spearheaded the development of wireframes and requirement gathering with the client, to develop a customer analytics solution on Tableau that aided the client in retaining customers more efficiently and proactively.
 - Demonstrated expertise in the solution through successful training sessions to the client and delivered a demo to an audience of over 100, including Deloitte Leadership.
 - Managed the creation of a detailed data dictionary, which facilitated improved data modeling and patient tracking analytics.
