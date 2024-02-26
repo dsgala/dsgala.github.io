@@ -1,5 +1,6 @@
 # Data Scientist
 
+## Skills
 ### Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
 #### ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
 #### Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
