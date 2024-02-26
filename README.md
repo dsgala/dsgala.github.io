@@ -1,11 +1,5 @@
 # Data Scientist
 
-## Skills
-- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
-- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
-- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
-- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
-
 ## Education						       		
 - M.S., Applied Data Science	| The University of Chicago (_December 2023_)	 			        		
 - B.S., Applied Statistics & Analytics | Narsee Monjee Institute of Management Studies (_May 2021_)
@@ -49,4 +43,10 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 
 ### [Data-Driven Strategies for Optimizing Term Deposit Sales](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
+
+## Skills
+- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
+- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
+- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
+- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
 
