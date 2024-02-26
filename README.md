@@ -4,6 +4,12 @@
 - M.S., Applied Data Science	| The University of Chicago (_December 2023_)	 			        		
 - B.S., Applied Statistics & Analytics | Narsee Monjee Institute of Management Studies (_May 2021_)
 
+## Skills
+- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
+- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
+- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
+- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
+
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
 - Spearheaded automation initiatives to streamline data collection and cleaning, significantly improving the efficiency of data analysis and reporting processes for multiple client projects.
@@ -43,10 +49,4 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 
 ### [Data-Driven Strategies for Optimizing Term Deposit Sales](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
-
-## Skills
-- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
-- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
-- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
-- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
 
