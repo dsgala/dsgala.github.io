@@ -49,5 +49,6 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
 [Code] (https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
+
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
