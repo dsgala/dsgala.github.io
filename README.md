@@ -1,13 +1,10 @@
 # Data Scientist
 
 ## Skills
-Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
-
-ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
-
-Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
-
-Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
+- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
+- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
+- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
+- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
 
 ## Education						       		
 - M.S., Applied Data Science	| The University of Chicago (_December 2023_)	 			        		
