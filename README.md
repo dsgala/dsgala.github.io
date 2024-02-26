@@ -21,7 +21,7 @@
 
 **Associate Analyst @ Deloitte (_July 2021 - July 2022_)**
 
-***Data Engineering and Analytics***
+*Data Engineering and Analytics*
 - Boosted sales by 50% by enhancing 10+ Tableau dashboards with strategic enhancements, delivering a customized solution that empowered clients to track sales through 5+ KPIs and leadership to analyze individual and overall performance. 
 - Responsible for designing and implementing automated data ingestion & curation pipelines to enable visual analytics delivery for a leading pharmaceutical company, manufacturer of the COVID vaccine.
 - Conducted data profiling to integrate a new source, and validated data across all ETL layers in the pipeline to guarantee consistent flow, ensuring the accuracy and reliability of the data.
