@@ -17,8 +17,8 @@
 
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
-- Spearheaded automation initiatives to streamline data collection and cleaning, significantly improving the efficiency of data analysis and reporting processes for multiple client projects.
-- Led transformative data analysis of facility work orders, identifying critical patterns and insights that enabled the implementation of best practices, enhancing operational efficiencies and client facilities management.
+- Initiated and led the deployment of automation initiatives, achieving a 50% improvement in data collection and cleaning efficiency using Databricks and Power BI, servicing multiple client projects.
+- Conducted an in-depth data analysis on Excel for work orders across 3000+ facilities, which uncovered key patterns and insights, resulting in a 30% enhancement in operational efficiencies and the adoption of best practices for client facilities management.
 
 **Enterprise Data Analyst Intern @ NXP Semiconductors (_June 2023 - December 2023_)**
 - Enabled precise resource prediction by orchestrating a Compute Resource Forecasting system on Dataiku for 200+ users utilizing Azure ML Studio for each machine learning model execution, facilitating strategic, cost-effective decisions for the administrative team.
