@@ -15,6 +15,21 @@
 - Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
 - Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
 
+
+## Projects
+### [Automatic Bayesian Network Construction from Natural Language Prompts](https://github.com/dsgala/Automated-Bayesian-Networks)
+Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
+
+### [Forecasting NYC Yellow Taxi Prices and Demand](https://github.com/dsgala/Forecasting-NYC-Yellow-Taxi-Prices-and-Demand)
+Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
+
+### [Forecasting Travel Time for Uber Riders](https://github.com/dsgala/Uber-Movements)
+Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
+
+### [Data-Driven Strategies for Optimizing Term Deposit Sales](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
+Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
+
+
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
 - Initiated and led the deployment of automation initiatives, achieving a 50% improvement in data collection and cleaning efficiency using Databricks and Power BI, servicing multiple client projects.
@@ -40,20 +55,6 @@
 - Spearheaded the development of wireframes and requirement gathering with the client, to develop a customer analytics solution on Tableau that aided the client in retaining customers more efficiently and proactively.
 - Demonstrated expertise in the solution through successful training sessions to the client and delivered a demo to an audience of over 100, including Deloitte Leadership.
 - Managed the creation of a detailed data dictionary, which facilitated improved data modeling and patient tracking analytics.
-
-
-## Projects
-### [Automatic Bayesian Network Construction from Natural Language Prompts](https://github.com/dsgala/Automated-Bayesian-Networks)
-Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
-
-### [Forecasting NYC Yellow Taxi Prices and Demand](https://github.com/dsgala/Forecasting-NYC-Yellow-Taxi-Prices-and-Demand)
-Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
-
-### [Forecasting Travel Time for Uber Riders](https://github.com/dsgala/Uber-Movements)
-Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
-
-### [Data-Driven Strategies for Optimizing Term Deposit Sales](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
-Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
 ### [E-Commerce-Recommendation-System](https://github.com/dsgala/E-Commerce-Recommendation-System)
 Developed a “Recommendation Engine” AI solution for a Website using an Unsupervised segmentation/clustering approach complete with economic analysis. 
