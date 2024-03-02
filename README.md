@@ -29,6 +29,9 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 ### [Data-Driven Strategies for Optimizing Term Deposit Sales](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
+### [E-Commerce-Recommendation-System](https://github.com/dsgala/E-Commerce-Recommendation-System)
+Developed a “Recommendation Engine” AI solution for a Website using an Unsupervised segmentation/clustering approach complete with economic analysis. 
+
 
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
@@ -55,7 +58,3 @@ Applied data mining techniques for preprocessing, exploration, feature engineeri
 - Spearheaded the development of wireframes and requirement gathering with the client, to develop a customer analytics solution on Tableau that aided the client in retaining customers more efficiently and proactively.
 - Demonstrated expertise in the solution through successful training sessions to the client and delivered a demo to an audience of over 100, including Deloitte Leadership.
 - Managed the creation of a detailed data dictionary, which facilitated improved data modeling and patient tracking analytics.
-
-### [E-Commerce-Recommendation-System](https://github.com/dsgala/E-Commerce-Recommendation-System)
-Developed a “Recommendation Engine” AI solution for a Website using an Unsupervised segmentation/clustering approach complete with economic analysis. 
-
