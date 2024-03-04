@@ -36,7 +36,7 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](Projects/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 
-Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
+In the project aimed at optimizing term deposit sales, I initiated the process with detailed data preprocessing, including the careful treatment of missing values and the transformation of categorical variables. This was followed by insightful feature engineering to enhance the dataset's predictive potential. Selecting a Random Forest Classifier for its robust adaptability to complex datasets, they meticulously tuned the model, incorporating SMOTE to mitigate class imbalance challenges This led me to provide recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
 ### Developing a Personalized Recommendation Engine for E-commerce
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](Projects/E-Commerce-Recommendation-Code.html)
