@@ -19,7 +19,6 @@
 ## Projects
 ### Automatic Bayesian Network Construction from Natural Language Prompts
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Automated-Bayesian-Networks)
-
 Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
 
 ### Forecasting NYC Yellow Taxi Prices and Demand
