@@ -35,26 +35,5 @@ Developed a “Recommendation Engine” AI solution for a Website using an Unsup
 
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
-- Initiated and led the deployment of automation initiatives, achieving a 50% improvement in data collection and cleaning efficiency using Databricks and Power BI, servicing multiple client projects.
-- Conducted an in-depth data analysis on Excel for work orders across 3000+ facilities, which uncovered key patterns and insights, resulting in a 30% enhancement in operational efficiencies and the adoption of best practices for client facilities management.
-
 **Enterprise Data Analyst Intern @ NXP Semiconductors (_June 2023 - December 2023_)**
-- Enabled precise resource prediction by orchestrating a Compute Resource Forecasting system on Dataiku for 200+ users utilizing Azure ML Studio for each machine learning model execution, facilitating strategic, cost-effective decisions for the administrative team.
-- Elevated report quality by 35% through the implementation of a Power BI Report Self-Vetting process for over 8700+ organizational reports, integrating detailed data collection and user profiling, while conserving valuable resources.
-- Achieved 50% better compliance by spearheading an audit process utilizing Power BI logs through Power Automate and Office scripts; also introduced a Governance Matrix to enable informed, proactive actions.
-
 **Associate Analyst @ Deloitte (_July 2021 - July 2022_)**
-
-*Data Engineering and Analytics*
-- Boosted sales by 50% by enhancing 10+ Tableau dashboards with strategic enhancements, delivering a customized solution that empowered clients to track sales through 5+ KPIs and leadership to analyze individual and overall performance. 
-- Responsible for designing and implementing automated data ingestion & curation pipelines to enable visual analytics delivery for a leading pharmaceutical company, manufacturer of the COVID vaccine.
-- Conducted data profiling to integrate a new source, and validated data across all ETL layers in the pipeline to guarantee consistent flow, ensuring the accuracy and reliability of the data.
-
-*Quality Assurance and Process Improvement*
-- Led quality assurance with thorough unit/integration tests, and resolved edge bug cases for pipeline/dashboard, resulting in improved functionality.
-- Developed comprehensive solution documentation that improved inter-team and cross-team collaboration, leading to more efficient and effective project execution.
-
-*Client Engagement and Leadership*
-- Spearheaded the development of wireframes and requirement gathering with the client, to develop a customer analytics solution on Tableau that aided the client in retaining customers more efficiently and proactively.
-- Demonstrated expertise in the solution through successful training sessions to the client and delivered a demo to an audience of over 100, including Deloitte Leadership.
-- Managed the creation of a detailed data dictionary, which facilitated improved data modeling and patient tracking analytics.
