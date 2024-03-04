@@ -33,6 +33,7 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
 
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
+[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](Projects/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
 
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
