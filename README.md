@@ -1,4 +1,4 @@
-# Data Scientist
+# Portfolio
 
 ## Education						       		
 **M.S., Applied Data Science**
@@ -30,7 +30,7 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 Applied data mining techniques for preprocessing, exploration, feature engineering, and modeling on a Portuguese banking dataset to predict term deposit subscription rates, thereby providing recommendations to enhance marketing strategies and improve customer satisfaction and subscription rates.
 
 ### [E-Commerce-Recommendation-System](https://github.com/dsgala/E-Commerce-Recommendation-System)
-Developed a “Recommendation Engine” AI solution for a Website using an Unsupervised segmentation/clustering approach complete with economic analysis. 
+In this project, I applied an unsupervised learning technique using the RFM (Recency, Frequency, Monetary Value) model to segment the e-commerce website's customers into distinct groups. By conducting extensive descriptive statistics, I established a refined dataset that facilitated the segmentation process. Utilizing the K-Means clustering algorithm, I classified customers into mutually exclusive groups based on their purchasing patterns. This enabled the creation of personalized recommendations for each segment, significantly enhancing the potential for increased sales and customer engagement.
 
 
 ## Work Experience
