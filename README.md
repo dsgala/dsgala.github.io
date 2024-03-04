@@ -35,5 +35,7 @@ Developed a “Recommendation Engine” AI solution for a Website using an Unsup
 
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
+
 **Enterprise Data Analyst Intern @ NXP Semiconductors (_June 2023 - December 2023_)**
+
 **Associate Analyst @ Deloitte (_July 2021 - July 2022_)**
