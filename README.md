@@ -10,18 +10,19 @@
   Narsee Monjee Institute of Management Studies (_May 2021_)
 
 ## Skills
-- Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
+- Languages:   <img alt="Python" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" />
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flai-square&logo=postgresql&logoColor=white" />
+  <img alt="R" src="https://img.shields.io/badge/R-%23276DC3.svg?style=flat-square&logo=r&logoColor=white" />
+  <img alt="Neo4j" src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" />
 - Libraries: NumPy, Pandas, Seaborn, Scikit-learn, PyTorch, LangChain, Tensorflow
 - Technologies: AWS, Docker, Snowflake, Power BI, Tableau
 
 <h3>Programming languages and tools I use</h3>
 <p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" />
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flai-square&logo=postgresql&logoColor=white" />
-  <img alt="R" src="https://img.shields.io/badge/R-%23276DC3.svg?style=flat-square&logo=r&logoColor=white" />
+
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" />
   <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="Neo4j" src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" />
+
   <img alt="Hadoop" src="https://img.shields.io/badge/Hadoop-6CF?logo=apachehadoop&logoColor=fff&style=flat-square" />
   <img alt="PySpark" src="https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=fff&style=flat-square" />
   <img alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=fff&style=flat-squar" />
