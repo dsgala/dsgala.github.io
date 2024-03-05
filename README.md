@@ -43,7 +43,9 @@ In the project aimed at optimizing term deposit sales, I initiated the process w
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/E-Commerce-Recommendation-System)
 
 In this project, I applied an unsupervised learning technique using the RFM (Recency, Frequency, Monetary Value) model to segment the e-commerce website's customers into distinct groups. By conducting extensive descriptive statistics, I established a refined dataset that facilitated the segmentation process. Utilizing the K-Means clustering algorithm, I classified customers into mutually exclusive groups based on their purchasing patterns. This enabled the creation of personalized recommendations for each segment, significantly enhancing the potential for increased sales and customer engagement.
-
+<br>
+<center><img src="assets/R-F-M.jpg"/></center>
+<br>
 
 ## Work Experience
 **Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
