@@ -17,7 +17,7 @@
   <img style="vertical-align: middle;" alt="Neo4j" src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" />
   <img style="vertical-align: middle;" alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
   <img style="vertical-align: middle;" alt="Bash" src="https://img.shields.io/badge/Bash-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white" />
-/*- Libraries:  Seaborn, LangChain */
+<!-- Libraries:  Seaborn, LangChain -->
 - Libraries:
   <img style="vertical-align: middle;" alt="Pandas" src="https://img.shields.io/badge/Pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white" />
   <img style="vertical-align: middle;" alt="NumPy" src="https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white" />
