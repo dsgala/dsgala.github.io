@@ -23,6 +23,7 @@
   <img alt="Keras" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=flat-square&logo=Keras&logoColor=white" />
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" />
   <img alt="PySpark" src="https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=fff&style=flat-square" />
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
 
 - Technologies: AWS, Snowflake, Power BI, Tableau
 - Technologies:   <img alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" /> 
