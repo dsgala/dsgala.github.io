@@ -11,9 +11,8 @@
 
 ## Skills
 - Languages: Python, R, SQL, NoSQL (MongoDB, Neo4j), Git, HQL, C
-- ML/AI Libraries: PyTorch, LangChain, Scikit-learn, Tensorflow
-- Data Engineering & BI: Oracle, Power Automate, Azure Machine Learning Studio, Alteryx, Power BI, Tableau
-- Cloud Technologies: Azure, GCP, Docker, Kubernetes, Snowflake, Dataiku
+- Libraries: NumPy, Pandas, Seaborn, Scikit-learn, PyTorch, LangChain, Tensorflow
+- Technologies: AWS, Docker, Snowflake, Power BI, Tableau
 
 
 ## Projects
