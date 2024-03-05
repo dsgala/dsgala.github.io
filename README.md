@@ -10,12 +10,6 @@
   Narsee Monjee Institute of Management Studies (_May 2021_)
 
 ## Skills
-- Languages:   <img alt="Python" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" />
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flai-square&logo=postgresql&logoColor=white" />
-  <img alt="R" src="https://img.shields.io/badge/R-%23276DC3.svg?style=flat-square&logo=r&logoColor=white" />
-  <img alt="Neo4j" src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="Bash" src="https://img.shields.io/badge/Bash-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white" />
 - Languages:
   <img style="vertical-align: middle;" alt="Python" src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" />
   <img style="vertical-align: middle;" alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flai-square&logo=postgresql&logoColor=white" />
@@ -24,23 +18,22 @@
   <img style="vertical-align: middle;" alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
   <img style="vertical-align: middle;" alt="Bash" src="https://img.shields.io/badge/Bash-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white" />
 - Libraries:  Seaborn, LangChain
-- Libraries:   <img alt="Pandas" src="https://img.shields.io/badge/Pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white" />
-  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white" />
-  <img alt="Scikit-Learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white" />
-  <img alt="Keras" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=flat-square&logo=Keras&logoColor=white" />
-  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" />
-  <img alt="PySpark" src="https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=fff&style=flat-square" />
-  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-
+- Libraries:
+  <img style="vertical-align: middle;" alt="Pandas" src="https://img.shields.io/badge/Pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white" />
+  <img style="vertical-align: middle;" alt="NumPy" src="https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white" />
+  <img style="vertical-align: middle;" alt="Scikit-Learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white" />
+  <img style="vertical-align: middle;" alt="Keras" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=flat-square&logo=Keras&logoColor=white" />
+  <img style="vertical-align: middle;" alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" />
+  <img style="vertical-align: middle;" alt="PySpark" src="https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=fff&style=flat-square" />
+  <img style="vertical-align: middle;" alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
 - Technologies: Snowflake
-- Technologies:   <img alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" /> 
-  <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=fff&style=flat-squar" />
-  <img alt="MLFlow" src="https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=fff&style=flat-square" />
-  <img alt="Power BI" src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=Power%20BI&logoColor=white" />
-  <img alt="Tableau" src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" />
-  
-<h3>Programming languages and tools I use</h3>
+- Technologies:
+  <img style="vertical-align: middle;" alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+  <img style="vertical-align: middle;" alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
+  <img style="vertical-align: middle;" alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=fff&style=flat-squar" />
+  <img style="vertical-align: middle;" alt="MLFlow" src="https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=fff&style=flat-square" />
+  <img style="vertical-align: middle;" alt="Power BI" src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=Power%20BI&logoColor=white" />
+  <img style="vertical-align: middle;" alt="Tableau" src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" />
 <p>
 </p>
 
