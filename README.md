@@ -3,7 +3,8 @@
 ## Education						       		
 **M.S., Applied Data Science**
   
-  The University of Chicago (_December 2023_)	 		
+  The University of Chicago (_December 2023_)
+  
   
 **B.S., Applied Statistics & Analytics**
   
@@ -77,3 +78,6 @@ In this project, I applied an unsupervised learning technique using the RFM (Rec
 **Enterprise Data Analyst Intern @ NXP Semiconductors (_June 2023 - December 2023_)**
 
 **Associate Analyst @ Deloitte (_July 2021 - July 2022_)**
+
+---
+<center>© 2020 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
