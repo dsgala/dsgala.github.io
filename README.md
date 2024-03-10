@@ -56,8 +56,8 @@ The "Uber Travel Time Series Forecasting" project leverages Uber Movement’s da
 <!-- <center><img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"><center>-->
 </div>
 <div style="text-align: center;"> 
-  <img src="assets/Uber_Movements_2.png" alt="Image 1" style="width: 48%; margin-right: 2%;">
-  <img src="assets/Uber_Movements_1.png" alt="Image 2" style="width: 48%;">
+  <img src="assets/Uber_Movements_1.png" alt="Image 1" style="width: 48%; margin-right: 2%;">
+  <img src="assets/Uber_Movements_2.png" alt="Image 2" style="width: 48%;">
 </div>
 
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
