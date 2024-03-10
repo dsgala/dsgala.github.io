@@ -56,11 +56,9 @@ The "Uber Travel Time Series Forecasting" project leverages Uber Movement’s da
 <!-- <center><img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"><center>-->
 <br>
 <div style=”float: left;”> 
-<img src=”assets/Uber_Movements_2” /> 
-</div> 
+<img src=”assets/Uber_Movements_2” /> </div> 
 <div style=”float: left; clear: right;”> 
-<img src=”assets/Uber_Movements_1” /> 
-</div> 
+<img src=”assets/Uber_Movements_1” /> </div> 
 <br>
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](Projects/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales.html)
