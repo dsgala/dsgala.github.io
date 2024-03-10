@@ -53,10 +53,15 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Uber-Movements)
 
 The "Uber Travel Time Series Forecasting" project leverages Uber Movement’s data from billions of trips to forecast travel times in Los Angeles with high accuracy. This comprehensive analysis includes automated data retrieval, extensive data cleansing, and exploration of various models like ARIMA, Regression, and LSTM, among others. Focusing on Los Angeles, the study also assesses COVID-19 impacts and external factors like weather and holidays. ARIMA emerged as the top-performing model, significantly enhancing travel time predictions and providing key insights for optimizing Uber's operations.
+<!-- <center><img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"><center>-->
 <br>
-<center><img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"><center>
+<div style=”float: left;”> 
+<img src=”assets/Uber_Movements_2” /> 
+</div> 
+<div style=”float: left; clear: right;”> 
+<img src=”assets/Uber_Movements_1” /> 
+</div> 
 <br>
-
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](Projects/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales.html)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales)
