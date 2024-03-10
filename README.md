@@ -54,7 +54,7 @@ Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi t
 
 The "Uber Travel Time Series Forecasting" project leverages Uber Movement’s data from billions of trips to forecast travel times in Los Angeles with high accuracy. This comprehensive analysis includes automated data retrieval, extensive data cleansing, and exploration of various models like ARIMA, Regression, and LSTM, among others. Focusing on Los Angeles, the study also assesses COVID-19 impacts and external factors like weather and holidays. ARIMA emerged as the top-performing model, significantly enhancing travel time predictions and providing key insights for optimizing Uber's operations.
 <br>
-<img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"> 
+<center><img src="assets/Uber_Movements_2" alt="Image 1"><img src="assets/Uber_Movements_1" alt="Image 2"><center>
 <br>
 
 ### Data-Driven Strategies for Optimizing Term Deposit Sales
