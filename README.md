@@ -42,7 +42,7 @@
 ### Automatic Bayesian Network Construction from Natural Language Prompts
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Automated-Bayesian-Networks)
 
-Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
+This project developed an innovative AI tool that leverages Large Language Models (LLMs) and Bayesian networks to automate risk analysis in market-marked asset portfolios. The tool dynamically integrates real-time market data and user inputs to model risks and provide proactive risk management solutions. Utilizing state-of-the-art NLP capabilities of GPT-4, the system interprets natural language prompts to construct Bayesian networks, which predict and assess market risks with high precision. This application not only enhances decision-making efficiency but also democratizes complex risk assessment, making it accessible to non-experts without sacrificing analytical rigor.
 
 ### Real-Time BMI Detection through face
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Face2BMI)
