@@ -50,7 +50,6 @@ Developed a bespoke AI solution enabling individual traders to assess market ris
 The Big Data project on NYC Yellow Taxi trip data leveraged cloud computing and advanced machine learning to unravel urban transportation dynamics. Utilizing 29 GB of taxi trip data hosted on Google Cloud Platform, the initiative capitalized on Spark’s processing prowess to manage and analyze vast datasets efficiently. Sophisticated analytical methods were demonstrated during exploratory data analysis, uncovering trends influenced by socio-economic factors and the rise of ride-sharing entities. The project skillfully navigated through an array of machine learning techniques, from linear regression to gradient-boosted trees, achieving a notable R² value that underscored feature engineering's critical impact on predictive modeling. The outcomes recommended a shift towards collaborative strategies with ride-sharing services, supported by data-driven insights that validate the project’s thorough analytical approach.
 <br>
 <center><img src="assets/Big_Data_Pipeline.jpeg"/></center>
-<center><img src="assets/Big_Data_Pipeline.jpeg" width="600" height="800"/></center>
 <br>
 
 ### Forecasting Travel Time for Uber Riders
