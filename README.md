@@ -47,7 +47,7 @@ Developed a bespoke AI solution enabling individual traders to assess market ris
 ### Forecasting NYC Yellow Taxi Prices and Demand
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Forecasting-NYC-Yellow-Taxi-Prices-and-Demand)
 
-Utilized clusters on Google Cloud Platform to analyze 29 GB of NYC Yellow Taxi trip data using Spark, to identify price sensitivity and demand forecasting trends. Conducted feature engineering and developed regression models to predict cab fares and demand based on location and time.
+The Big Data project on NYC Yellow Taxi trip data harnessed the power of cloud computing and machine learning to decode complex urban transportation patterns by hosting 29 GB of data on the Google Cloud Platform, the project employed Spark for efficient big data processing. Advanced analytics techniques were showcased in the exploratory data analysis, revealing significant trends affected by socio-economic factors, including the advent of ride-sharing platforms. With an adept use of machine learning — from linear regression to gradient-boosted trees — the study achieved an impressive R² value, highlighting feature engineering's pivotal role in predictive accuracy. Key findings indicated a strategic shift towards partnership with ride-sharing services could be beneficial, backed by robust model performance that highlighted the importance of feature engineering in predictive analytics.
 
 ### Forecasting Travel Time for Uber Riders
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Uber-Movements)
