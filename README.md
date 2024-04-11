@@ -44,7 +44,7 @@
 
 Developed a bespoke AI solution enabling individual traders to assess market risks by constructing Bayesian Networks and calculating real-time probabilities via APIs, thereby facilitating informed decision-making in financial trades. 
 
-### Real-Time Facial BMI Detection
+### Real-Time BMI Detection
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Automated-Bayesian-Networks)
 
 In the BMI Estimation project, advanced machine learning techniques were harnessed to predict BMI from facial images. Utilizing a comprehensive dataset, images were processed using ResNet50’s pre-processing capabilities for compatibility with VGG16. The project showcased two models: a VGG16-based model refined with dense and dropout layers for regression, and a superior VGGFace + SVR model, which demonstrated the efficacy of domain-specific feature extraction. The latter model’s enhanced precision was evidenced by its strong Pearson Correlation Coefficient, exemplifying the impactful combination of deep learning and machine learning for accurate health predictions.
