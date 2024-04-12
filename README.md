@@ -3,10 +3,13 @@
 ## Education						       		
 ### The University of Chicago
 #### M.S., Applied Data Science (_December 2023_)
+4.00/4.00 CGPA
+Courses taken:
+
+
   
 ### Narsee Monjee Institute of Management Studies
-  
-  B.S., Applied Statistics & Analytics (_May 2021_)
+#### B.S., Applied Statistics & Analytics (_May 2021_)
 
 ## Skills
 - Languages:
