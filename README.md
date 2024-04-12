@@ -2,8 +2,7 @@
 
 ## Education						       		
 ### The University of Chicago
-   
-  M.S., Applied Data Science (_December 2023_)
+#### M.S., Applied Data Science (_December 2023_)
   
 ### Narsee Monjee Institute of Management Studies
   
