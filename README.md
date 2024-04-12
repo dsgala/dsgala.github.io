@@ -1,14 +1,13 @@
 # Portfolio
 
 ## Education						       		
-### The University of Chicago (_December 2023_)
+### The University of Chicago
    
-  M.S., Applied Data Science
+  M.S., Applied Data Science (_December 2023_)
   
+### Narsee Monjee Institute of Management Studies
   
-### B.S., Applied Statistics & Analytics
-  
-  Narsee Monjee Institute of Management Studies (_May 2021_)
+  B.S., Applied Statistics & Analytics (_May 2021_)
 
 ## Skills
 - Languages:
