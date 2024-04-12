@@ -9,9 +9,9 @@ Courses taken:
  - Statistical Analysis
  - Data Science for Consulting
  - Data Engineering Platforms
- - Data Mining Principles, Linear and Non-Linear Models, 
+ - Data Mining Principles
  - Big Data Platforms
- - Machine Learning
+ - Machine Learning & Predictive Analytics
  - Time Series Analysis
  - Natural Language Processing
  - ML Operations
