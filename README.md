@@ -18,6 +18,7 @@ Courses taken:
   
 ### Narsee Monjee Institute of Management Studies
 #### B.S., Applied Statistics & Analytics (_May 2021_)
+ - 3.98/4.00 CGPA
 
 ## Skills
 - Languages:
