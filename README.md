@@ -1,6 +1,6 @@
 # Portfolio
 
-## Education						       		
+## Education					       		
 ### The University of Chicago
 #### M.S., Applied Data Science (_December 2023_)
  - 4.00/4.00 CGPA
