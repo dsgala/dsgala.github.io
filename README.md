@@ -53,7 +53,7 @@ Courses taken:
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/Automated-Bayesian-Networks)
 This project demonstrates the deployment and enhancement of the Mistral Large Language Model (LLM) on Google Cloud's Vertex AI to improve responses in healthcare contexts. Using the MASQA dataset, the model was refined through various prompting techniques and the RAG architecture for increased accuracy in medical queries. Vertex AI's scalability and security features ensured the effective handling of sensitive data. Continuous updates and performance monitoring via A/B testing guaranteed the model's relevance and efficiency, showcasing the impact of AI in delivering precise healthcare advice.
 <br>
-<center><img src="assets/Bayesian_Methodology.jpeg"/></center>
+<center><img src="assets/MLOps_pipeline.png"/></center>
 <br>
 
 ### Automatic Bayesian Network Construction from Natural Language Prompts
