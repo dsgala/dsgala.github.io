@@ -42,6 +42,7 @@ Courses taken:
   <img style="vertical-align: middle;" alt="AWS" src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
   <img style="vertical-align: middle;" alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
   <img style="vertical-align: middle;" alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=fff&style=flat-squar" />
+  <img style="vertical-align: middle;" alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
   <img style="vertical-align: middle;" alt="MLFlow" src="https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=fff&style=flat-square" />
   <img style="vertical-align: middle;" alt="Power BI" src="https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=Power%20BI&logoColor=white" />
   <img style="vertical-align: middle;" alt="Tableau" src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" />
@@ -113,7 +114,9 @@ In this project, I applied an unsupervised learning technique using the RFM (Rec
 <br>
 
 ## Work Experience
-**Business Analyst @ Jones Lang LaSalle (_January 2024 - Present_)**
+**Data Scientist - PBM Pricing and Product Analytics @ CVS Health (_July 2024 - Present_)**
+
+**Business Analyst @ Jones Lang LaSalle (_January 2024 - July 2024_)**
 
 **Enterprise Data Analyst Intern @ NXP Semiconductors (_June 2023 - December 2023_)**
 
