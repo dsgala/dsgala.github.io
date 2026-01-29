@@ -50,6 +50,15 @@ Courses taken:
 </p>
 
 ## Projects
+
+### AI-Powered Legal Contract Analysis & Risk Assessment Platform
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/legal-rag-qa)
+
+An intelligent contract analysis platform combining Retrieval-Augmented Generation (RAG) with Claude Sonnet 4 for natural language queries, multi-contract comparison, and automated risk assessment. Features smart contract detection with auto-extraction of contracting parties, party-specific risk analysis, and comprehensive visual dashboards. The system processes PDF and text contracts to identify risks across 8 legal categories (Liability, Termination, Payment, IP, Confidentiality, Compliance, Business Terms, Warranties), providing severity classification (Critical/High/Medium/Low) and actionable mitigation recommendations. Built with LangChain, ChromaDB vector store, and Streamlit, demonstrating production-grade RAG architecture and advanced prompt engineering for legal-tech applications.
+
+![](assets/legal_rag_system.png)
+
 ### Optimizing AI Healthcare Solutions with Mistral LLM
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/AI-Healthcare-Solutions-with-Mistral.git)
 
