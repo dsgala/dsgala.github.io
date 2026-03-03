@@ -51,6 +51,13 @@ Courses taken:
 
 ## Projects
 
+### 🚀 Startup Intelligence Digest — Automated Multi-Agent AI System
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/startup-digest)
+
+An automated multi-agent AI system that searches the web and compiles the latest startup news into a beautifully formatted HTML digest, delivered 3x a week. Four specialized agents work in parallel — a Funding Agent tracking investment rounds and VC activity, a Products & Research Agent monitoring launches and AI breakthroughs, and a Composer Agent that synthesizes everything into a clean, skimmable HTML report. Built with Python and the Anthropic API (Claude Haiku), the system features automatic retry logic for rate limits, built-in token-level cost tracking, and is fully automated via Mac cron with desktop notifications. Demonstrates end-to-end multi-agent architecture with real-world web search, structured output generation, and production-ready automation.
+<br>
+
 ### AI-Powered Legal Contract Analysis & Risk Assessment Platform
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/legal-rag-qa)
