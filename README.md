@@ -51,7 +51,7 @@ Courses taken:
 
 ## Projects
 
-### 🚀 Startup Intelligence Digest — Automated Multi-Agent AI System
+### Startup Intelligence Digest — Automated Multi-Agent AI System
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/dsgala/startup-digest)
 
