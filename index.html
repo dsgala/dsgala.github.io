@@ -82,19 +82,19 @@
         }
 
         .nav-tab {
-            color: var(--text-muted);
+            color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.82rem;
+            font-size: 0.9rem;
             font-weight: 500;
             letter-spacing: 0.04em;
-            padding: 0.45rem 1.3rem;
+            padding: 0.5rem 1.4rem;
             border-radius: 100px;
             transition: var(--transition);
             cursor: pointer;
             white-space: nowrap;
         }
 
-        .nav-tab:hover { color: var(--text-secondary); }
+        .nav-tab:hover { color: var(--text-primary); }
 
         .nav-tab.active {
             background: var(--accent);
@@ -213,6 +213,14 @@
         }
 
         .intro h1 em { font-style: italic; color: var(--accent); }
+
+        .intro-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.01em;
+        }
 
         .intro-desc {
             font-size: 1.1rem;
@@ -704,7 +712,7 @@
 
 <!-- NAV -->
 <nav id="navbar">
-    <a href="#" class="nav-logo">Dharmi Gala</a>
+    <a href="#" class="nav-logo">DG</a>
     <div class="nav-tabs" id="navTabs">
         <span class="nav-tab active" data-tab="intro">Intro</span>
         <span class="nav-tab" data-tab="work">Work & Education</span>
@@ -728,6 +736,7 @@
     <section class="intro">
         <div class="intro-grid">
             <div class="intro-content">
+                <div class="intro-name" style="opacity:0; animation: fadeUp 0.7s 0.1s forwards;">Dharmi Gala</div>
                 <span class="intro-label">Data Scientist · Healthcare & AI</span>
                 <h1>Turning complex data<br>into <em>real impact</em></h1>
                 <p class="intro-desc">
@@ -736,7 +745,7 @@
                 </p>
                 <div class="intro-ctas">
                     <span class="btn btn-primary" data-tab="projects">View My Projects ↓</span>
-                    <a href="mailto:dharmigala@gmail.com" class="btn btn-outline">Get in Touch</a>
+                    <a href="mailto:galadharmi02@gmail.com" class="btn btn-outline">Get in Touch</a>
                 </div>
                 <div class="intro-highlights">
                     <div class="highlight-item">
@@ -759,14 +768,7 @@
             </div>
             <div class="intro-photo-wrap">
                 <div class="intro-photo">
-                    <!-- TO ADD YOUR PHOTO: Replace the div below with:
-                         <img class="headshot" src="assets/headshot.jpg" alt="Dharmi Gala"> -->
-                    <div class="intro-photo-inner">
-                        <div class="photo-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                        </div>
-                        <span class="photo-hint">Your photo here</span>
-                    </div>
+                    <img class="headshot" src="assets/headshot.jpg" alt="Dharmi Gala">
                 </div>
             </div>
         </div>
@@ -1064,7 +1066,7 @@
         <h2>Let's connect</h2>
         <p>Open to data science opportunities, collaborations, and interesting conversations.</p>
         <div class="contact-links">
-            <a href="mailto:dharmigala@gmail.com" class="contact-link">
+            <a href="mailto:galadharmi02@gmail.com" class="contact-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Email
             </a>
