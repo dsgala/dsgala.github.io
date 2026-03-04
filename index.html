@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmi Gala — Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #111118;
+            --bg-card: #16161f;
+            --bg-card-hover: #1c1c28;
+            --text-primary: #e8e6e3;
+            --text-secondary: #9896a1;
+            --text-muted: #5c5a66;
+            --accent: #c9a55a;
+            --accent-light: #e0c882;
+            --accent-dim: rgba(201, 165, 90, 0.12);
+            --accent-glow: rgba(201, 165, 90, 0.06);
+            --border: rgba(255, 255, 255, 0.06);
+            --border-accent: rgba(201, 165, 90, 0.2);
+            --radius: 12px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent-dim) transparent;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+
+        ::selection { background: var(--accent); color: var(--bg-primary); }
+
+        /* ==================== NAV ==================== */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 1.2rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(24px);
+            background: rgba(10, 10, 15, 0.72);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 0.8rem 2.5rem;
+            background: rgba(10, 10, 15, 0.94);
+        }
+
+        .nav-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 0.3rem;
+            list-style: none;
+            background: rgba(255,255,255,0.03);
+            border-radius: 100px;
+            padding: 0.25rem;
+            border: 1px solid var(--border);
+        }
+
+        .nav-tab {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            padding: 0.45rem 1.3rem;
+            border-radius: 100px;
+            transition: var(--transition);
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-tab:hover { color: var(--text-secondary); }
+
+        .nav-tab.active {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+
+        .nav-social {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .nav-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-social a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .nav-social a svg { width: 15px; height: 15px; }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            width: 22px;
+            height: 1.5px;
+            background: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        /* ==================== TAB PANELS ==================== */
+        .tab-panel {
+            display: none;
+            min-height: 100vh;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .tab-panel.active { display: block; }
+        .tab-panel.visible { opacity: 1; transform: translateY(0); }
+
+        /* ==================== INTRO TAB ==================== */
+        .intro {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2.5rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: -20%; right: -5%;
+            width: 650px; height: 650px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .intro-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .intro-content { z-index: 1; }
+
+        .intro-label {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border-accent);
+            border-radius: 100px;
+            opacity: 0;
+            animation: fadeUp 0.7s 0.15s forwards;
+        }
+
+        .intro h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 1.4rem;
+            opacity: 0;
+            animation: fadeUp 0.7s 0.3s forwards;
+        }
+
+        .intro h1 em { font-style: italic; color: var(--accent); }
+
+        .intro-desc {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin-bottom: 2.2rem;
+            opacity: 0;
+            animation: fadeUp 0.7s 0.45s forwards;
+        }
+
+        .intro-ctas {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.7s 0.6s forwards;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.72rem 1.7rem;
+            border-radius: 100px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-primary { background: var(--accent); color: var(--bg-primary); }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(201, 165, 90, 0.25);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Photo placeholder */
+        .intro-photo-wrap {
+            opacity: 0;
+            animation: fadeUp 0.7s 0.5s forwards;
+        }
+
+        .intro-photo {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-accent);
+        }
+
+        .intro-photo-inner {
+            width: 100%; height: 100%;
+            background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .photo-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: var(--accent-dim);
+            border: 2px solid var(--border-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-icon svg { width: 28px; height: 28px; color: var(--accent); }
+
+        .photo-hint {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .intro-photo img.headshot {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .intro-highlights {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            opacity: 0;
+            animation: fadeUp 0.7s 0.75s forwards;
+        }
+
+        .highlight-item { text-align: left; }
+
+        .highlight-value {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .highlight-label {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 0.25rem;
+        }
+
+        /* ==================== WORK & EDUCATION TAB ==================== */
+        .we-section { padding: 8rem 2.5rem 5rem; }
+
+        .we-inner { max-width: 1100px; margin: 0 auto; }
+
+        .we-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 5rem;
+            margin-top: 3rem;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.6rem;
+        }
+
+        .section-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 560px;
+            margin-top: 0.8rem;
+        }
+
+        .subsection-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2.2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 8px; bottom: 8px;
+            width: 1px;
+            background: linear-gradient(180deg, var(--accent), var(--border));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+        }
+
+        .timeline-item:last-child { padding-bottom: 0; }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.2rem; top: 6px;
+            width: 9px; height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid var(--bg-primary);
+            box-shadow: 0 0 0 3px var(--accent-dim);
+        }
+
+        .timeline-date {
+            font-size: 0.75rem;
+            color: var(--accent);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-role {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.15rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .timeline-company {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .timeline-desc {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            max-width: 480px;
+            line-height: 1.65;
+        }
+
+        /* Education cards */
+        .edu-cards { display: flex; flex-direction: column; gap: 1.2rem; }
+
+        .edu-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.6rem;
+            transition: var(--transition);
+        }
+
+        .edu-card:hover { border-color: var(--border-accent); background: var(--bg-card-hover); }
+
+        .edu-card-label {
+            font-size: 0.68rem; font-weight: 600;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 0.5rem;
+        }
+
+        .edu-card-school { font-family: 'DM Serif Display', serif; font-size: 1.15rem; margin-bottom: 0.2rem; }
+        .edu-card-degree { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .edu-card-meta { color: var(--text-muted); font-size: 0.8rem; }
+
+        .edu-card-courses { margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+        .course-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem; padding: 0.2rem 0.55rem;
+            border-radius: 5px; background: var(--accent-dim);
+            color: var(--text-muted); letter-spacing: 0.02em;
+        }
+
+        /* Skills within W&E */
+        .skills-strip { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+
+        .skills-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.2rem; }
+
+        .skill-group-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.2rem 1.4rem;
+            flex: 1; min-width: 180px;
+            transition: var(--transition);
+        }
+
+        .skill-group-card:hover { border-color: var(--border-accent); }
+
+        .skill-group-label {
+            font-size: 0.7rem; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 0.6rem;
+        }
+
+        .skill-pills { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+        .skill-pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem; padding: 0.22rem 0.6rem;
+            border-radius: 5px; background: var(--accent-dim);
+            color: var(--text-secondary);
+        }
+
+        /* ==================== PROJECTS TAB ==================== */
+        .projects-section { padding: 8rem 2.5rem 5rem; }
+        .projects-inner { max-width: 1100px; margin: 0 auto; }
+
+        .project-filters {
+            display: flex; gap: 0.3rem;
+            margin-top: 2rem; margin-bottom: 2.5rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 100px; padding: 0.25rem;
+            border: 1px solid var(--border);
+            width: fit-content;
+        }
+
+        .project-filter {
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-size: 0.82rem; font-weight: 500;
+            letter-spacing: 0.03em; color: var(--text-muted);
+            cursor: pointer; transition: var(--transition);
+            border: none; background: none;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .project-filter:hover { color: var(--text-secondary); }
+        .project-filter.active { background: var(--accent); color: var(--bg-primary); }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 1.4rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card.hidden {
+            display: none;
+        }
+
+        .project-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card-img {
+            width: 100%; height: 185px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+        }
+
+        .project-card-body {
+            padding: 1.4rem; flex: 1;
+            display: flex; flex-direction: column;
+        }
+
+        .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.7rem; }
+
+        .project-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem; font-weight: 500;
+            padding: 0.2rem 0.55rem; border-radius: 100px;
+            background: var(--accent-dim); color: var(--accent);
+            letter-spacing: 0.02em;
+        }
+
+        .project-card-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.1rem; margin-bottom: 0.5rem; line-height: 1.3;
+        }
+
+        .project-card-desc {
+            color: var(--text-muted); font-size: 0.85rem;
+            line-height: 1.6; flex: 1;
+        }
+
+        .project-card-footer {
+            display: flex; align-items: center; gap: 0.4rem;
+            margin-top: 1rem; font-size: 0.8rem; font-weight: 500;
+            color: var(--accent); transition: var(--transition);
+        }
+
+        .project-card:hover .project-card-footer { gap: 0.7rem; }
+        .project-card-footer svg { width: 14px; height: 14px; }
+
+        /* ==================== CONTACT STRIP ==================== */
+        .contact-strip {
+            padding: 4rem 2.5rem;
+            background: var(--bg-secondary);
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .contact-strip-inner { max-width: 600px; margin: 0 auto; }
+
+        .contact-strip h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem; font-weight: 400; margin-bottom: 0.5rem;
+        }
+
+        .contact-strip p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.8rem; }
+
+        .contact-links { display: flex; justify-content: center; gap: 0.7rem; flex-wrap: wrap; }
+
+        .contact-link {
+            display: inline-flex; align-items: center; gap: 0.45rem;
+            padding: 0.6rem 1.3rem;
+            border: 1px solid var(--border); border-radius: 100px;
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 0.85rem; transition: var(--transition);
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent); color: var(--accent);
+            background: var(--accent-dim); transform: translateY(-2px);
+        }
+
+        .contact-link svg { width: 15px; height: 15px; }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            padding: 1.5rem 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ==================== ANIMATIONS ==================== */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .anim-in {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .anim-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                text-align: center;
+            }
+            .intro-photo-wrap { order: -1; max-width: 220px; margin: 0 auto; }
+            .intro-desc { margin-left: auto; margin-right: auto; }
+            .intro-ctas { justify-content: center; }
+            .intro-highlights { justify-content: center; flex-wrap: wrap; }
+            .we-grid { grid-template-columns: 1fr; gap: 3rem; }
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 1rem 1.2rem; }
+            .nav-tabs {
+                display: none; position: absolute;
+                top: 100%; left: 0; right: 0;
+                flex-direction: column;
+                background: rgba(10, 10, 15, 0.97);
+                padding: 1rem; gap: 0.3rem;
+                border-bottom: 1px solid var(--border);
+                backdrop-filter: blur(20px);
+                border-radius: 0;
+            }
+            .nav-tabs.open { display: flex; }
+            .nav-tab { text-align: center; padding: 0.6rem 1rem; }
+            .nav-social { display: none; }
+            .hamburger { display: flex; }
+            .intro, .we-section, .projects-section {
+                padding-left: 1.3rem; padding-right: 1.3rem;
+            }
+            .intro-highlights { gap: 1.2rem; }
+            .highlight-value { font-size: 1.3rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .skills-row { flex-direction: column; }
+            .skill-group-card { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+    <a href="#" class="nav-logo">Dharmi Gala</a>
+    <div class="nav-tabs" id="navTabs">
+        <span class="nav-tab active" data-tab="intro">Intro</span>
+        <span class="nav-tab" data-tab="work">Work & Education</span>
+        <span class="nav-tab" data-tab="projects">Projects</span>
+    </div>
+    <div class="nav-social">
+        <a href="https://github.com/dsgala" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dharmigala/" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- ==================== INTRO TAB ==================== -->
+<div class="tab-panel active" id="panel-intro">
+    <section class="intro">
+        <div class="intro-grid">
+            <div class="intro-content">
+                <span class="intro-label">Data Scientist · Healthcare & AI</span>
+                <h1>Turning complex data<br>into <em>real impact</em></h1>
+                <p class="intro-desc">
+                    I'm Dharmi — a data scientist building pricing algorithms, ML systems, and LLM applications
+                    in healthcare. Currently at CVS Health, previously at Deloitte, JLL, and NXP Semiconductors.
+                </p>
+                <div class="intro-ctas">
+                    <span class="btn btn-primary" data-tab="projects">View My Projects ↓</span>
+                    <a href="mailto:dharmigala@gmail.com" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="intro-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-value">UChicago</div>
+                        <div class="highlight-label">M.S. Data Science</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-value">4.0</div>
+                        <div class="highlight-label">GPA</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-value">4+</div>
+                        <div class="highlight-label">Years Experience</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-value">9</div>
+                        <div class="highlight-label">Open-Source Projects</div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-photo-wrap">
+                <div class="intro-photo">
+                    <!-- TO ADD YOUR PHOTO: Replace the div below with:
+                         <img class="headshot" src="assets/headshot.jpg" alt="Dharmi Gala"> -->
+                    <div class="intro-photo-inner">
+                        <div class="photo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <span class="photo-hint">Your photo here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== WORK & EDUCATION TAB ==================== -->
+<div class="tab-panel" id="panel-work">
+    <section class="we-section">
+        <div class="we-inner">
+            <div class="section-label">Background</div>
+            <h2 class="section-title">Work & Education</h2>
+            <p class="section-subtitle">From pharma consulting to healthcare pricing — every role deepened my understanding of how data drives decisions.</p>
+
+            <div class="we-grid">
+                <div>
+                    <h3 class="subsection-title">Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item anim-in">
+                            <div class="timeline-date">July 2024 — Present</div>
+                            <div class="timeline-role">Data Scientist</div>
+                            <div class="timeline-company">CVS Health / Caremark</div>
+                            <div class="timeline-desc">Building drug pricing algorithms and automated reporting systems for the PBM Pricing & Product Analytics team. Supporting TrueCost and Aetna with pricing optimization, member copay analysis, and Tableau dashboards.</div>
+                        </div>
+                        <div class="timeline-item anim-in">
+                            <div class="timeline-date">January 2024 — July 2024</div>
+                            <div class="timeline-role">Business Analyst</div>
+                            <div class="timeline-company">Jones Lang LaSalle (JLL)</div>
+                            <div class="timeline-desc">Developed predictive models for work-order management and operational efficiency in commercial real estate analytics.</div>
+                        </div>
+                        <div class="timeline-item anim-in">
+                            <div class="timeline-date">June 2023 — December 2023</div>
+                            <div class="timeline-role">Enterprise Data Analyst Intern</div>
+                            <div class="timeline-company">NXP Semiconductors</div>
+                            <div class="timeline-desc">Built demand forecasting systems for semiconductor supply chain planning using large-scale time series data and production pipelines.</div>
+                        </div>
+                        <div class="timeline-item anim-in">
+                            <div class="timeline-date">July 2021 — July 2022</div>
+                            <div class="timeline-role">Associate Analyst</div>
+                            <div class="timeline-company">Deloitte</div>
+                            <div class="timeline-desc">Designed ETL pipelines and sales forecasting models for pharmaceutical clients, building a foundation in healthcare analytics and consulting.</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="subsection-title">Education</h3>
+                    <div class="edu-cards">
+                        <div class="edu-card anim-in">
+                            <div class="edu-card-label">Master's Degree</div>
+                            <div class="edu-card-school">University of Chicago</div>
+                            <div class="edu-card-degree">M.S. Applied Data Science</div>
+                            <div class="edu-card-meta">December 2023 · 4.00 / 4.00 GPA</div>
+                            <div class="edu-card-courses">
+                                <span class="course-tag">ML & Predictive Analytics</span>
+                                <span class="course-tag">NLP</span>
+                                <span class="course-tag">Time Series</span>
+                                <span class="course-tag">Data Engineering</span>
+                                <span class="course-tag">Big Data</span>
+                                <span class="course-tag">MLOps</span>
+                                <span class="course-tag">Data Mining</span>
+                                <span class="course-tag">Statistical Analysis</span>
+                            </div>
+                        </div>
+                        <div class="edu-card anim-in">
+                            <div class="edu-card-label">Bachelor's Degree</div>
+                            <div class="edu-card-school">NMIMS, Mumbai</div>
+                            <div class="edu-card-degree">B.S. Applied Statistics & Analytics</div>
+                            <div class="edu-card-meta">May 2021 · 3.98 / 4.00 GPA</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-strip anim-in">
+                        <h3 class="subsection-title">Technical Skills</h3>
+                        <div class="skills-row">
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">Languages</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">Python</span>
+                                    <span class="skill-pill">SQL</span>
+                                    <span class="skill-pill">R</span>
+                                    <span class="skill-pill">Bash</span>
+                                    <span class="skill-pill">Neo4j</span>
+                                </div>
+                            </div>
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">ML & DL</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">Scikit-Learn</span>
+                                    <span class="skill-pill">PyTorch</span>
+                                    <span class="skill-pill">TensorFlow</span>
+                                    <span class="skill-pill">XGBoost</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-row" style="margin-top:0.7rem;">
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">LLM & NLP</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">LangChain</span>
+                                    <span class="skill-pill">RAG</span>
+                                    <span class="skill-pill">Claude API</span>
+                                    <span class="skill-pill">ChromaDB</span>
+                                </div>
+                            </div>
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">Cloud & Infra</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">AWS</span>
+                                    <span class="skill-pill">GCP</span>
+                                    <span class="skill-pill">Docker</span>
+                                    <span class="skill-pill">Airflow</span>
+                                    <span class="skill-pill">K8s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-row" style="margin-top:0.7rem;">
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">Analytics & Viz</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">Pandas</span>
+                                    <span class="skill-pill">NumPy</span>
+                                    <span class="skill-pill">Tableau</span>
+                                    <span class="skill-pill">Power BI</span>
+                                    <span class="skill-pill">MLflow</span>
+                                </div>
+                            </div>
+                            <div class="skill-group-card">
+                                <div class="skill-group-label">Domains</div>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">Healthcare</span>
+                                    <span class="skill-pill">Drug Pricing</span>
+                                    <span class="skill-pill">Time Series</span>
+                                    <span class="skill-pill">A/B Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== PROJECTS TAB ==================== -->
+<div class="tab-panel" id="panel-projects">
+    <section class="projects-section">
+        <div class="projects-inner">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">End-to-end systems spanning LLM applications, multi-agent AI, classical ML, and big data.</p>
+
+            <div class="project-filters">
+                <button class="project-filter active" data-filter="all">All</button>
+                <button class="project-filter" data-filter="ai">AI & LLMs</button>
+                <button class="project-filter" data-filter="ml">Machine Learning</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- AI PROJECTS -->
+                <a href="https://github.com/dsgala/startup-digest" target="_blank" class="project-card anim-in" data-category="ai">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/startup_digest_architecture.png" alt="Startup Digest" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Multi-Agent AI</span>
+                            <span class="project-tag">Claude API</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-card-title">Startup Intelligence Digest</div>
+                        <div class="project-card-desc">Automated multi-agent system with three specialized agents that search the web and compile startup news into formatted HTML digests 3x/week. Features cost tracking and retry logic.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/legal-rag-qa" target="_blank" class="project-card anim-in" data-category="ai">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/legal_rag_system.png" alt="Legal RAG" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">RAG</span>
+                            <span class="project-tag">LangChain</span>
+                            <span class="project-tag">Claude</span>
+                            <span class="project-tag">ChromaDB</span>
+                        </div>
+                        <div class="project-card-title">AI Legal Contract Analysis Platform</div>
+                        <div class="project-card-desc">RAG-powered contract analysis with multi-contract comparison and automated risk assessment across 8 legal categories with severity classification.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/AI-Healthcare-Solutions-with-Mistral.git" target="_blank" class="project-card anim-in" data-category="ai">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/MLOps_pipeline.png" alt="Mistral Healthcare" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">MLOps</span>
+                            <span class="project-tag">Vertex AI</span>
+                            <span class="project-tag">Mistral 7B</span>
+                        </div>
+                        <div class="project-card-title">Healthcare Q&A with Mistral LLM</div>
+                        <div class="project-card-desc">Deployed and fine-tuned Mistral LLM on Google Cloud Vertex AI for medical queries. Features A/B testing, RAG architecture, and production monitoring.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/Automated-Bayesian-Networks" target="_blank" class="project-card anim-in" data-category="ai">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/Bayesian_Methodology.jpeg" alt="Bayesian Networks" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Bayesian Networks</span>
+                            <span class="project-tag">GPT-4</span>
+                            <span class="project-tag">NLP</span>
+                        </div>
+                        <div class="project-card-title">Automated Bayesian Network Construction</div>
+                        <div class="project-card-desc">LLM-powered tool that interprets natural language to construct Bayesian networks for automated risk analysis in market-marked asset portfolios.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <!-- ML PROJECTS -->
+                <a href="https://github.com/dsgala/Face2BMI" target="_blank" class="project-card anim-in" data-category="ml">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/Face2BMI.jpeg" alt="Face2BMI" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">VGGFace</span>
+                            <span class="project-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-card-title">Real-Time BMI Detection from Faces</div>
+                        <div class="project-card-desc">Predicts BMI from facial images using VGG16 and VGGFace + SVR models with domain-specific feature extraction and strong Pearson correlation results.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/Forecasting-NYC-Yellow-Taxi-Prices-and-Demand" target="_blank" class="project-card anim-in" data-category="ml">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/Big_Data_Pipeline.jpeg" alt="NYC Taxi" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">PySpark</span>
+                            <span class="project-tag">GCP</span>
+                            <span class="project-tag">Big Data</span>
+                        </div>
+                        <div class="project-card-title">NYC Taxi Price & Demand Forecasting</div>
+                        <div class="project-card-desc">Cloud-scale ML on 29GB of taxi data using Spark on GCP. From linear regression to gradient-boosted trees, showing the impact of feature engineering.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/Uber-Movements" target="_blank" class="project-card anim-in" data-category="ml">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/Uber_Movements_1.png" alt="Uber Movements" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Time Series</span>
+                            <span class="project-tag">ARIMA</span>
+                            <span class="project-tag">LSTM</span>
+                        </div>
+                        <div class="project-card-title">Uber Travel Time Forecasting</div>
+                        <div class="project-card-desc">Time series forecasting of LA travel times using ARIMA, regression, and LSTM. Assessed COVID-19 impact and external factors like weather and holidays.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/Data-Driven-Strategies-for-Optimizing-Term-Deposit-Sales" target="_blank" class="project-card anim-in" data-category="ml">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/data_mining.png" alt="Term Deposit" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Random Forest</span>
+                            <span class="project-tag">SMOTE</span>
+                            <span class="project-tag">Data Mining</span>
+                        </div>
+                        <div class="project-card-title">Optimizing Term Deposit Sales</div>
+                        <div class="project-card-desc">Classification pipeline with feature engineering, SMOTE for class imbalance, and Random Forest tuning to optimize banking marketing strategies.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/dsgala/E-Commerce-Recommendation-System" target="_blank" class="project-card anim-in" data-category="ml">
+                    <img src="https://raw.githubusercontent.com/dsgala/dsgala.github.io/main/assets/R-F-M.jpg" alt="E-Commerce Reco" class="project-card-img" loading="lazy">
+                    <div class="project-card-body">
+                        <div class="project-tags">
+                            <span class="project-tag">K-Means</span>
+                            <span class="project-tag">RFM Analysis</span>
+                            <span class="project-tag">Unsupervised ML</span>
+                        </div>
+                        <div class="project-card-title">E-Commerce Recommendation Engine</div>
+                        <div class="project-card-desc">Customer segmentation using RFM modeling and K-Means clustering to generate personalized recommendations and drive engagement.</div>
+                        <span class="project-card-footer">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CONTACT (always visible) -->
+<div class="contact-strip">
+    <div class="contact-strip-inner">
+        <h2>Let's connect</h2>
+        <p>Open to data science opportunities, collaborations, and interesting conversations.</p>
+        <div class="contact-links">
+            <a href="mailto:dharmigala@gmail.com" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+            </a>
+            <a href="https://github.com/dsgala" target="_blank" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/dharmigala/" target="_blank" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Dharmi Gala</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+    // --- Tab Navigation ---
+    const tabs = document.querySelectorAll('.nav-tab');
+    const panels = document.querySelectorAll('.tab-panel');
+    const navTabs = document.getElementById('navTabs');
+
+    document.querySelectorAll('[data-tab]').forEach(el => {
+        el.addEventListener('click', () => {
+            const tabId = el.getAttribute('data-tab');
+            switchTab(tabId);
+        });
+    });
+
+    function switchTab(tabId) {
+        tabs.forEach(t => t.classList.remove('active'));
+        document.querySelector(`.nav-tab[data-tab="${tabId}"]`)?.classList.add('active');
+
+        panels.forEach(p => p.classList.remove('active', 'visible'));
+
+        const target = document.getElementById(`panel-${tabId}`);
+        if (target) {
+            target.classList.add('active');
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    target.classList.add('visible');
+                });
+            });
+        }
+
+        navTabs.classList.remove('open');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        observeAnimations();
+    }
+
+    // Init: make intro visible
+    document.getElementById('panel-intro').classList.add('visible');
+
+    // --- Nav scroll ---
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // --- Hamburger ---
+    document.getElementById('hamburger').addEventListener('click', () => {
+        navTabs.classList.toggle('open');
+    });
+
+    // --- Project Filters ---
+    const filters = document.querySelectorAll('.project-filter');
+    const cards = document.querySelectorAll('.project-card');
+
+    filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filters.forEach(f => f.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    // --- Scroll Reveal ---
+    function observeAnimations() {
+        const items = document.querySelectorAll('.anim-in:not(.visible)');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        items.forEach(el => observer.observe(el));
+    }
+
+    observeAnimations();
+</script>
+</body>
+</html>
