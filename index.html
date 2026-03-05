@@ -324,9 +324,7 @@
             object-fit: cover;
         }
 
-        .intro-highlights {
-            display: flex;
-            gap: 2.5rem;
+        .intro-stats-block {
             margin-top: 3.5rem;
             padding-top: 2rem;
             border-top: 1px solid var(--border);
@@ -334,21 +332,146 @@
             animation: fadeUp 0.7s 0.75s forwards;
         }
 
-        .highlight-item { text-align: left; }
+        .stats-row {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
 
-        .highlight-value {
+        .stat-item { text-align: center; flex: 1; }
+
+        .stat-value {
             font-family: 'DM Serif Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: var(--accent);
             line-height: 1;
         }
 
-        .highlight-label {
-            font-size: 0.72rem;
+        .stat-label {
+            font-size: 0.7rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-top: 0.25rem;
+            margin-top: 0.3rem;
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 32px;
+            background: var(--border);
+            flex-shrink: 0;
+        }
+
+        .brands-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .brand-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            letter-spacing: 0.03em;
+        }
+
+        .brand-dot {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+        }
+
+        /* ==================== CURRENTLY SECTION ==================== */
+        .currently-section {
+            padding: 3rem 2.5rem 0;
+        }
+
+        .currently-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .currently-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+        }
+
+        .currently-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .currently-item {
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .currently-item:hover {
+            border-color: var(--border-accent);
+        }
+
+        .currently-icon {
+            font-size: 1.3rem;
+            line-height: 1;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .currently-title {
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+            color: var(--text-primary);
+        }
+
+        .currently-desc {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Credentials strip */
+        .cred-strip {
+            padding: 2rem 2.5rem 3rem;
+        }
+
+        .cred-items {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .cred-item {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            letter-spacing: 0.03em;
+        }
+
+        .cred-divider {
+            color: var(--text-muted);
+            font-size: 0.7rem;
         }
 
         /* ==================== WORK & EDUCATION TAB ==================== */
@@ -677,7 +800,12 @@
             .intro-photo-wrap { order: -1; max-width: 220px; margin: 0 auto; }
             .intro-desc { margin-left: auto; margin-right: auto; }
             .intro-ctas { justify-content: center; }
-            .intro-highlights { justify-content: center; flex-wrap: wrap; }
+            .stats-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .stat-divider { display: none; }
             .we-grid { grid-template-columns: 1fr; gap: 3rem; }
         }
 
@@ -700,18 +828,13 @@
             .intro, .we-section, .projects-section {
                 padding-left: 1.3rem; padding-right: 1.3rem;
             }
-            .intro-highlights { 
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1.2rem;
-                text-align: center;
-            }
-
-            .highlight-value { font-size: 1.3rem; }
+            .currently-section { padding-left: 1.3rem; padding-right: 1.3rem; }
+            .currently-items { grid-template-columns: 1fr; }
+            .stat-value { font-size: 1.3rem; }
         }
 
         @media (max-width: 480px) {
-            .highlight-value { font-size: 1.2rem; }
+            .stat-value { font-size: 1.2rem; }
             .projects-grid { grid-template-columns: 1fr; }
             .skills-row { flex-direction: column; }
             .skill-group-card { min-width: 100%; }
@@ -755,24 +878,44 @@
                 </p>
                 <div class="intro-ctas">
                     <span class="btn btn-primary" data-tab="projects">View My Projects ↓</span>
-                    <a href="mailto:galadharmi02@gmail.com" class="btn btn-outline">Get in Touch</a>
+                    <a href="assets/DharmiGala_Resume.pdf" target="_blank" class="btn btn-outline">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Resume
+                    </a>
+                    <a href="#contact-strip" class="btn btn-outline" onclick="event.preventDefault(); document.getElementById('contact-strip').scrollIntoView({behavior:'smooth'});">Get in Touch</a>
                 </div>
-                <div class="intro-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-value">UChicago</div>
-                        <div class="highlight-label">M.S. Data Science</div>
+                <div class="intro-stats-block">
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-value">4.0</div>
+                            <div class="stat-label">GPA</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-value">4+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-value">9</div>
+                            <div class="stat-label">Open-Source Projects</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-value">AWS</div>
+                            <div class="stat-label">ML Certified</div>
+                        </div>
                     </div>
-                    <div class="highlight-item">
-                        <div class="highlight-value">4.0</div>
-                        <div class="highlight-label">GPA</div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-value">4+</div>
-                        <div class="highlight-label">Years Experience</div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-value">9</div>
-                        <div class="highlight-label">Open-Source Projects</div>
+                    <div class="brands-row">
+                        <span class="brand-name">UChicago</span>
+                        <span class="brand-dot">·</span>
+                        <span class="brand-name">CVS Health</span>
+                        <span class="brand-dot">·</span>
+                        <span class="brand-name">Deloitte</span>
+                        <span class="brand-dot">·</span>
+                        <span class="brand-name">JLL</span>
+                        <span class="brand-dot">·</span>
+                        <span class="brand-name">NXP Semiconductors</span>
                     </div>
                 </div>
             </div>
@@ -783,9 +926,39 @@
             </div>
         </div>
     </section>
-</div>
 
-<!-- ==================== WORK & EDUCATION TAB ==================== -->
+    <!-- What I'm Building -->
+    <div class="currently-section">
+        <div class="currently-inner">
+            <div class="currently-label">What I'm Currently Exploring</div>
+            <div class="currently-items">
+                <div class="currently-item">
+                    <span class="currently-icon">⚡</span>
+                    <div>
+                        <div class="currently-title">AI Agent Architecture</div>
+                        <div class="currently-desc">Multi-agent systems, MCP, LangGraph & orchestration patterns</div>
+                    </div>
+                </div>
+                <div class="currently-item">
+                    <span class="currently-icon">🏥</span>
+                    <div>
+                        <div class="currently-title">Healthcare ML</div>
+                        <div class="currently-desc">Drug pricing optimization & predictive guarantee modeling</div>
+                    </div>
+                </div>
+                <div class="currently-item">
+                    <span class="currently-icon">🔍</span>
+                    <div>
+                        <div class="currently-title">RAG & LLM Applications</div>
+                        <div class="currently-desc">Production-grade retrieval systems for domain-specific use cases</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end currently section -->
+</div>
 <div class="tab-panel" id="panel-work">
     <section class="we-section">
         <div class="we-inner">
@@ -801,25 +974,25 @@
                             <div class="timeline-date">July 2024 — Present</div>
                             <div class="timeline-role">Data Scientist</div>
                             <div class="timeline-company">CVS Health / Caremark</div>
-                            <div class="timeline-desc">Building drug pricing algorithms and automated reporting systems for the PBM Pricing & Product Analytics team. Supporting TrueCost and Aetna with pricing optimization, member copay analysis, and Tableau dashboards.</div>
+                            <div class="timeline-desc">Building drug pricing optimization under TrueCost (Caremark's drug-level guarantee system), expanding from generics to specialty and brand drugs. Built predictive models to forecast customer performance against guarantees, reducing shortfalls by 8%. Designed automated data pipelines for Aetna, partnering with 5+ cross-functional teams for 500+ clients.</div>
                         </div>
                         <div class="timeline-item anim-in">
                             <div class="timeline-date">January 2024 — July 2024</div>
                             <div class="timeline-role">Business Analyst</div>
                             <div class="timeline-company">Jones Lang LaSalle (JLL)</div>
-                            <div class="timeline-desc">Developed predictive models for work-order management and operational efficiency in commercial real estate analytics.</div>
+                            <div class="timeline-desc">Built a model to predict work-order SLA breaches, integrated into dashboards and alerts to reduce delays. Automated data integration and reporting using Power Automate and Power Query across 3,000+ properties.</div>
                         </div>
                         <div class="timeline-item anim-in">
                             <div class="timeline-date">June 2023 — December 2023</div>
                             <div class="timeline-role">Enterprise Data Analyst Intern</div>
                             <div class="timeline-company">NXP Semiconductors</div>
-                            <div class="timeline-desc">Built demand forecasting systems for semiconductor supply chain planning using large-scale time series data and production pipelines.</div>
+                            <div class="timeline-desc">Orchestrated a Compute Resource Forecasting system on Dataiku for 200+ users using Azure ML Studio. Achieved 50% better compliance by spearheading audit processes with Power BI and Power Automate.</div>
                         </div>
                         <div class="timeline-item anim-in">
                             <div class="timeline-date">July 2021 — July 2022</div>
                             <div class="timeline-role">Associate Analyst</div>
                             <div class="timeline-company">Deloitte</div>
-                            <div class="timeline-desc">Designed ETL pipelines and sales forecasting models for pharmaceutical clients, building a foundation in healthcare analytics and consulting.</div>
+                            <div class="timeline-desc">Developed ETL pipelines for visual analytics, demonstrating insights to 100+ stakeholders including Deloitte leadership. Implemented vaccine sales forecasting using AWS (S3, Athena, SageMaker). Boosted sales by 50% through strategic Tableau dashboard enhancements.</div>
                         </div>
                     </div>
                 </div>
@@ -847,6 +1020,11 @@
                             <div class="edu-card-school">NMIMS, Mumbai</div>
                             <div class="edu-card-degree">B.S. Applied Statistics & Analytics</div>
                             <div class="edu-card-meta">May 2021 · 3.98 / 4.00 GPA</div>
+                        </div>
+                        <div class="edu-card anim-in">
+                            <div class="edu-card-label">Certification</div>
+                            <div class="edu-card-school">AWS Certified Machine Learning — Specialty</div>
+                            <div class="edu-card-degree">Amazon Web Services</div>
                         </div>
                     </div>
 
@@ -1071,7 +1249,7 @@
 </div>
 
 <!-- CONTACT (always visible) -->
-<div class="contact-strip">
+<div class="contact-strip" id="contact-strip">
     <div class="contact-strip-inner">
         <h2>Let's connect</h2>
         <p>Open to data science opportunities, collaborations, and interesting conversations.</p>
