@@ -700,8 +700,18 @@
             .intro, .we-section, .projects-section {
                 padding-left: 1.3rem; padding-right: 1.3rem;
             }
-            .intro-highlights { gap: 1.2rem; }
+            .intro-highlights { 
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.2rem;
+                text-align: center;
+            }
+
             .highlight-value { font-size: 1.3rem; }
+        }
+
+        @media (max-width: 480px) {
+            .highlight-value { font-size: 1.2rem; }
             .projects-grid { grid-template-columns: 1fr; }
             .skills-row { flex-direction: column; }
             .skill-group-card { min-width: 100%; }
@@ -712,7 +722,7 @@
 
 <!-- NAV -->
 <nav id="navbar">
-    <a href="#" class="nav-logo">DG</a>
+    <a href="#" class="nav-logo" data-tab="intro">DG</a>
     <div class="nav-tabs" id="navTabs">
         <span class="nav-tab active" data-tab="intro">Intro</span>
         <span class="nav-tab" data-tab="work">Work & Education</span>
